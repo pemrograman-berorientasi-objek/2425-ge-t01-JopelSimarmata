@@ -17,7 +17,7 @@ public class Account {
     }
 
     public String toString(){
-        return this.owner + "|" + this.accountName + "|" + this.balance;
+        return this.accountName + "|" + this.owner + "|" + this.balance;
     }
 
 
