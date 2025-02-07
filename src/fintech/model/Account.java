@@ -8,15 +8,16 @@ package fintech.model;
  */
 public class Account {
 
-    String owner;
-    String accountName;
-    public float balance = 0;
+    private String owner,accountName;
+    private double balance = 0.0;
 
     public Account(String owner, String accountName){
         this.owner = owner;
         this.accountName = accountName;
+    }
 
-        System.out.println(this.accountName+"|"+this.owner+"|"+this.balance);
+    public String toString(){
+        return this.owner + "|" + this.accountName + "|" + this.balance;
     }
 
 

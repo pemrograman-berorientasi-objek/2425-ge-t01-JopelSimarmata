@@ -13,7 +13,7 @@ public class Driver2 {
 
     public static void main(String[] _args) {
 
-        Scanner scn = new Scanner(System.in).useLocale(Locale.US);;
+        Scanner scn = new Scanner(System.in);
 
         String command = scn.nextLine();
         String owner = scn.nextLine();
@@ -21,21 +21,22 @@ public class Driver2 {
 
 
         Account account = new Account(owner, accountName);
+        System.out.println(account.toString());
 
-        
+        scn.hasNext();
 
         String command1 = scn.nextLine();
         String accountName2 = scn.nextLine();
         double amount = scn.nextDouble();
         String posted_at = scn.nextLine();
-
         String note = scn.nextLine();
 
 
         Transaction transaction = new Transaction(accountName2, amount, posted_at, note);
+        // System.out.println(transaction.toString());
         transaction.showTransaction();
 
-
+        scn.close();
     }
 
 }

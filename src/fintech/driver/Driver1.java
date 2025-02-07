@@ -17,7 +17,7 @@ public class Driver1 {
         String accountName = scn.nextLine();
 
         Account account = new Account(owner, accountName);
-
+        System.out.println(account.toString());
 
     }
 
