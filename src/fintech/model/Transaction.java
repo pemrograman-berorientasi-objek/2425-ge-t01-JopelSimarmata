@@ -21,7 +21,7 @@ public class Transaction {
 
 
     public void showTransaction(){
-        System.out.println("1"+"|"+ this.accountName + "|" + this.amount + "|" + this.note + "|" + this.posted +"|" + this.amount);
+        System.out.println("1"+"|"+ this.accountName + "|" + this.amount + "|" + this.posted + "|" + this.note +"|" + this.amount);
     }
     @Override
     public String toString(){
