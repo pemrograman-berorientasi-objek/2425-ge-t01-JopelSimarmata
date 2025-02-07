@@ -23,20 +23,21 @@ public class Driver2 {
         Account account = new Account(owner, accountName);
         System.out.println(account.toString());
 
-        scn.hasNext();
+
 
         String command1 = scn.nextLine();
         String accountName2 = scn.nextLine();
-        double amount = scn.nextDouble();
+        String amount = scn.nextLine();
         String posted_at = scn.nextLine();
         String note = scn.nextLine();
+        scn.close();
 
 
         Transaction transaction = new Transaction(accountName2, amount, posted_at, note);
         // System.out.println(transaction.toString());
         transaction.showTransaction();
 
-        scn.close();
+
     }
 
 }

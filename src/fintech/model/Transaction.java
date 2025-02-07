@@ -8,11 +8,11 @@ package fintech.model;
 public class Transaction {
 
     private String accountName;
-    private double amount;
+    private String amount;
     private String posted;
     private String note;
 
-    public Transaction(String accountName, double amount, String posted_at, String note){
+    public Transaction(String accountName, String amount, String posted_at, String note){
         this.accountName = accountName;
         this.amount = amount;
         this.posted = posted_at;
