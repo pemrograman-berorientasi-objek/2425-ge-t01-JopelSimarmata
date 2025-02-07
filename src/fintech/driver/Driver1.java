@@ -3,8 +3,8 @@ import fintech.model.Account;
 import java.util.Scanner;
 
 /**
- * @author NIM Nama
- * @author NIM Nama
+ * @author 12S23036 Jopel Simarmata
+ * @author 12S23024 Eska Silaen
  */
 public class Driver1 {
 
